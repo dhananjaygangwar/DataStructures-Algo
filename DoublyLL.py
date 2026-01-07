@@ -50,6 +50,25 @@ class DoublyLL:
             t1 = t1.next
         print(t1.data)
 
+    def deletionDLL(self, value):
+        if(self.head == None):
+            print("Empty Linked List")
+            return
+        
+        t = self.head
+        # deleting first node
+        if(t.data == value):
+            self.head = t.next
+            self.head.prev = None
+            return        
+        while(t.next == None):
+            if(t.data == value):
+                t.prev.next = t.next
+                t.next.prev = t.prev
+                return
+        if(t.data == value):
+            t.prev.next = None
+
 
 
 obj = DoublyLL()
