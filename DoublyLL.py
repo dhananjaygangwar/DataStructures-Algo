@@ -61,11 +61,13 @@ class DoublyLL:
             self.head = t.next
             self.head.prev = None
             return        
-        while(t.next == None):
+        while(t.next != None):
             if(t.data == value):
                 t.prev.next = t.next
                 t.next.prev = t.prev
                 return
+            else:
+                t = t.next
         if(t.data == value):
             t.prev.next = None
 
@@ -78,4 +80,6 @@ obj.insertAtEnd(30)
 obj.insertAtEnd(40)
 obj.insertAtBeg(5)
 obj.insertAtMid(50, 20)
+obj.deletionDLL(50)
+obj.deletionDLL(40)
 obj.printDLL()
