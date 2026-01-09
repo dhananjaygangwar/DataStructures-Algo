@@ -13,11 +13,16 @@ class Queue:
             print("Queue is Empty")
         else:
             return self.items.pop(0)
-        
+
+
+#cheking        
 q = Queue()
 q.insert(10)
 q.insert(20)
 q.insert(30)
 
 print(q.delete())
+print(q.delete())
+print(q.delete())
+q.delete()
         
