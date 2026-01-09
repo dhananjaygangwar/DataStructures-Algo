@@ -15,7 +15,7 @@ class Queue:
             return self.items.pop(0)
 
 
-#cheking        
+  
 q = Queue()
 q.insert(10)
 q.insert(20)

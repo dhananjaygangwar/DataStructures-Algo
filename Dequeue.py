@@ -29,7 +29,7 @@ dq.insertAtFront(20)
 dq.insertAtEnd(30)
 dq.insertAtEnd(40)
 dq.insertAtFront(50)
-#test cases
+
 print(dq.deleteAtEnd())
 print(dq.deleteAtEnd())
 print(dq.deleteAtFront())
