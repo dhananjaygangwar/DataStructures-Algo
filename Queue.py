@@ -24,5 +24,4 @@ q.insert(30)
 print(q.delete())
 print(q.delete())
 print(q.delete())
-q.delete()
-        
+q.delete() 
