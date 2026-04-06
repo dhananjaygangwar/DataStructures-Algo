@@ -8,7 +8,7 @@
 //     return sSort == tSort;
 // };
 
-// Hash map()
+// Hash map(10ms)
 const isAnagram = (t,s) => {
     if (s.length !== t.length){
         return false;
