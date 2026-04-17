@@ -22,7 +22,7 @@ const isAnagram = (t,s) => {
     }
     for(const key in countS){
         if (countS[key] !== countT[key]){
-            return false;
+            return false;            
         }
     }
     return true;    
